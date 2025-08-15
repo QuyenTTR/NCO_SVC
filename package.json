@@ -1,0 +1,32 @@
+{
+    "name": "nco_grs",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/QuyenTTR/NCO_SVC.git"
+    },
+    "keywords": [
+        "gameroom",
+        "service",
+        "nco",
+        "grs"
+    ],
+    "author": "neyuQcuLoH",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/QuyenTTR/NCO_SVC/issues"
+    },
+    "homepage": "https://github.com/QuyenTTR/NCO_SVC#readme",
+    "description": "",
+    "dependencies": {
+        "express": "^5.1.0"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.10"
+    }
+}
