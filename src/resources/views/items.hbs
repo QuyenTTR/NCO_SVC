@@ -1,0 +1,21 @@
+<div class="mt-4">
+    <div class="row">
+        <div class="col-md-9 col-lg-2">
+            {{#each items}}
+            <div class="card">
+                <img src="{{this.image}}" class="card-img-top" alt="...">
+                <div class="pd-10 card-body">
+                    <h5 class="card-title pb-4">
+                        <span class="text-primary">[{{this.quantity_left}}] </span>
+                        {{this.name}}
+                    </h5>
+
+                    <h5 class="card-title">
+                        <span class="text-success">{{this.price}} ₫</span>
+                    </h5>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
