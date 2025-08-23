@@ -5,8 +5,9 @@ const Schema = mongoose.Schema;
 const Item = new Schema({
     name: String,
     price: Number,
-    quantity_left: Number,
     image: String,
+    quantity_left: Number,
+    is_hide: Number,
     created_at: { type: Date, default: Date.now },
     updated_at: { type: Date, default: Date.now }
 });

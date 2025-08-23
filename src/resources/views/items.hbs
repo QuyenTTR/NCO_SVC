@@ -1,21 +1,38 @@
-<div class="mt-4">
-    <div class="row">
-        <div class="col-md-9 col-lg-2">
+<div class="content-header">
+    <div class="container-fluid row">
+        <h1 class="m-0 col-6">Mặt Hàng</h1>
+        <h1 class="m-0 col-6">
+            <button class="float-right btn btn-outline-primary">Thêm Mặt Hàng Mới +</button>
+        </h1>
+    </div>
+</div>
+<section class="content">
+    <div class="container-fluid row">
+        <div class="card p-3 m-2 col-2"></div>
+        <div class="card p-3 m-2 col-7 row">
             {{#each items}}
-            <div class="card">
-                <img src="{{this.image}}" class="card-img-top" alt="...">
-                <div class="pd-10 card-body">
-                    <h5 class="card-title pb-4">
-                        <span class="text-primary">[{{this.quantity_left}}] </span>
-                        {{this.name}}
-                    </h5>
+            <div class="card col-2">
+                <img src={{this.image}} class="card-img-top" style="aspect-ratio: 1.5 / 1; object-fit: cover;">
+                <div class="card-body p-2 pb-3">
+                    <h5 class="card-title"><b class="text-primary">[{{ this.quantity_left }}] </b>{{ this.name }}</h5>
+                    <p class="card-text mt-5"><b>{{ this.price }}</b></p>
 
-                    <h5 class="card-title">
-                        <span class="text-success">{{this.price}} ₫</span>
-                    </h5>
+                    {{#if this.is_hide}}
+                    <button class="w-100 btn btn-dark">Đã Ẩn</button>
+                    {{else}}
+                    <button class="w-100 btn btn-success">Đang Bán</button>
+                    {{/if}}
+                    <div class="text-nowrap text-center mt-1 row g-1">
+                        <div class="col-6">
+                            <btn class="btn w-100 btn-primary"><i class="fa-solid fa-pen-to-square"></i></btn>
+                        </div>
+                        <div class="col-6">
+                            <btn class="btn w-100 btn-danger"><i class="fa-solid fa-trash"></i></btn>
+                        </div>
+                    </div>
                 </div>
             </div>
             {{/each}}
         </div>
     </div>
-</div>
+</section>
