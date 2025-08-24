@@ -12,7 +12,7 @@
         <div class="card p-3 m-2 col-7 row">
             {{#each items}}
             <div class="card col-2">
-                <img src={{this.image}} class="card-img-top" style="aspect-ratio: 1.5 / 1; object-fit: cover;">
+                <img src="/dist/img/{{this.image}}" class="card-img-top" style="aspect-ratio: 1.5 / 1; object-fit: cover;">
                 <div class="card-body p-2 pb-3">
                     <h5 class="card-title"><b class="text-primary">[{{ this.quantity_left }}] </b>{{ this.name }}</h5>
                     <p class="card-text mt-5"><b>{{ this.price }}</b></p>

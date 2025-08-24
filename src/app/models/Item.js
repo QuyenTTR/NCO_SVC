@@ -8,8 +8,8 @@ const Item = new Schema({
     image: String,
     quantity_left: Number,
     is_hide: Number,
-    created_at: { type: Date, default: Date.now },
-    updated_at: { type: Date, default: Date.now }
+}, {
+    timestamps: true 
 });
 
 export default mongoose.model('Item', Item);
